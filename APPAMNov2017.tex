@@ -29,7 +29,7 @@
 
 \date[Short Occasion] % (optional)
 {November 2017* \\
-Preliminary: Please don't cite}
+Preliminary: Please ask before citing}
 
 
 \subject{Talks}
@@ -93,50 +93,93 @@ Preliminary: Please don't cite}
   % You might wish to add the option [pausesections]
 %\end{frame}
 
+
+\begin{frame}
+\begin{figure}
+\frame{
+\includegraphics[scale=0.25]{./images/1200px-Supplemental_Nutrition_Assistance_Program_logo.png}}
+
+Slides available at 
+
+\small{
+\url{http://www.github.com/garretchristensen/FoodAPSAPPAM2017}}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}{Outline}
+\begin{itemize}
+\item SNAP Background
+\item Food Price Variation Background
+\item SNAP Sufficiency
+\item Nutrition: Methods
+\item Nutrition: Results
+\item Conclusion
+\end{itemize}
+\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 
 \begin{frame}{SNAP Background}
-Food Stamps (i.e. the Supplemental Nutrition Assistance Program, SNAP) is one of the largest government assistance programs.
+The Supplemental Nutrition Assistance Program (SNAP) is one of the largest government assistance programs.
 \begin{itemize}
 \item
-	More than one in seven Americans
-\item
-	Cost: \$80 billion FY2013
+	2016: 44m recipients, cost of \$70 billion FY2016 \begin{tiny}[\href{https://fns-prod.azureedge.net/sites/default/files/pd/SNAPsummary.pdf}{Source: USDA FNS}]
+\end{tiny}	
 \item 
-	Started in 1964, expanded in 1971, purchase requirement eliminated in 1977
+	Started in 1964%, expanded in 1971, purchase requirement eliminated in 1977
 \item 
 	Paid for by Feds (the farm bill), administered by states
 \item
 	Electronic Balance Transfer (EBT) in early 2000s
+\item 
+	Name changed to SNAP in 2008.
 \end{itemize}
 \end{frame}
 
 \begin{frame}{How It Works}
+Eligibility:
 \begin{itemize}
-\item Less than \$2,250/\$3,250 in countable assets. (Not home, sometimes car.)
+\item Less than \$2,250/\$3,500 in countable assets. (Not home, sometimes car.)
 \item Less than net monthly income 100\% of FPL, Gross 130\% (\$2,021/\$2,628 family of 4)
 \item Earned income, dependent care, medical expenses, child support, excess shelter deductions.
 \item $ Benefits=MaxBenefits(\$649/month)-NetIncome*0.3 $
 \end{itemize}
+\begin{tiny}
+\href{https://www.fns.usda.gov/snap/eligibility}{[Source:USDA FNS]}
+\end{tiny}
 \end{frame}
 
 
 
 \begin{frame}{Recent Issues}
 \begin{itemize}
-\item Massive increase in recipients
+\item Large increase in recipients after financial crisis.
 \item ARRA: Benefits increased \$80/month in 2009, decreased in 2013.
 \item Able bodied without dependents 18-49(ABAWDs) eligibility maxes out at 3/36 months. Waived with high unemployment---kicking back in after Great Recession.
 \item Food insecurity among recipient households remains quite high \href{http://www.ers.usda.gov/media/1896841/err194.pdf}{(Coleman-Jensen et al., 2014)}.
 \end{itemize}
 \end{frame}
 
+\begin{frame}{Very Recent Issues}
+Administration Proposals:
+\begin{itemize}
+\item \$193b (25+\%) cut over 10 years
+\item Require ABAWDs work if $<$10\% unemployment
+\item Eliminate minimum benefit (\$16)
+\item Eliminate increase in benefits beyond 6 people in household. 
+\end{itemize}
+\begin{tiny}
+\href{https://www.cbpp.org/research/food-assistance/presidents-budget-would-shift-substantial-costs-to-states-and-cut-food}{[Source: CBPP]}
+\end{tiny}
+\end{frame}
+
 \begin{frame}
 \begin{figure}
 \includegraphics[width=\textwidth]{./images/Ziliak.PNG}
 
-Ziliak 2016
+\href{http://gattonweb.uky.edu/Faculty/Ziliak/Ziliak_SNAP_100413.pdf}{Ziliak 2015, ``SNAP Matters''}
 \end{figure}
 \end{frame}
 
@@ -208,30 +251,44 @@ Ziliak 2016
 }
 
 %%%%%OUR RESEARCH%%%%%%%%%%%%
-
 \begin{frame}
-Our data: At census block group level, but no map. Sorry!
-\end{frame}
 
-{
-   \setbeamertemplate{navigation symbols}{}
-    \begin{frame}[plain]
-        \begin{tikzpicture}[remember picture,overlay]
-            \node[at=(current page.center)] {
-                \includegraphics[width=\paperwidth]{./images/ComboBPHisto.png}
-            };
-        \end{tikzpicture}
-     \end{frame}
-}
+\begin{center}\href{http://garretchristensen.shinyapps.io/Food_Price_Maps}{\beamergotobutton{QFAHPD Visualization}}
+
+\vskip0.25in
+\hrulefill
+
+\vskip0.25in
+Our data: At census block group level, but no map. 
+
+Sorry!
+\end{center}
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{FoodAPS}
 ``USDA's National Household Food Acquisition and Purchase Survey (FoodAPS) is the first nationally representative survey of American households to collect unique and comprehensive data about household food purchases and acquisitions.''
 \begin{itemize}
 \item FoodAPS lets us look at the relationship between food prices and SNAP adequacy at a much finer geographical level.
-\item  We compare households' SNAP benefits to the prices these households face for a standardized bundle of foods: The Thrifty Food Plan.
+\item  \href{https://www.ers.usda.gov/media/8612/priceindexdata.pdf}{Gunderson et al.} use IRI InfoScan data at store (or regional chain) level to build basketprice measure.
+\item Index modeled after \href{https://www.cnpp.usda.gov/sites/default/files/usda_food_plans_cost_of_food/TFP2006Report.pdf}{Thrifty Food Plan} (TFP). 
 \end{itemize}
 \end{frame}
+
+
+
+
+
+{
+   \setbeamertemplate{navigation symbols}{}
+    \begin{frame}[plain]
+        \begin{tikzpicture}[remember picture,overlay]
+            \node[at=(current page.center)] {
+                \includegraphics[height=\paperheight]{./images/ComboBPHisto.png}
+            };
+        \end{tikzpicture}
+     \end{frame}
+}
 
 \begin{frame}{The Thrifty Food Plan (TFP)}
   \setlength{\leftmargini}{1em}
@@ -254,11 +311,11 @@ You're supposed to be able to buy TFP with 30\% of net income + food stamp benef
 \end{frame}
 %%%%%%%%%%%%%%%%HISTOGRAMS OF TFP
 
-\begin{frame}
-\begin{figure}
-{\includegraphics[scale=.4, trim=0cm .0cm 0cm 0cm, clip=true]{./images/low_basket_price_histo.png}}
-\end{figure}
-\end{frame}
+%\begin{frame}
+%\begin{figure}
+%{\includegraphics[scale=.4, trim=0cm .0cm 0cm 0cm, clip=true]{./images/low_basket_price_histo.png}}
+%\end{figure}
+%\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -267,12 +324,11 @@ You're supposed to be able to buy TFP with 30\% of net income + food stamp benef
 \item \large{Are SNAP benefits adequate for SNAP households to purchase the TFP? If not, what is the shortfall?}\\
 \vskip6pt \hspace{2mm} \normalsize{\underline{\textit{Compare TFP cost to:}}}
 \begin{itemize}
-{\item SNAP benefit received + 30\% of gross income} 
 {\item SNAP benefit received + 30\% of net income} 
 {\item Legislated maximum SNAP benefit} 
 \end{itemize}
-{\item \vskip12pt \large{What about for SNAP-eligible households?}}\\
-{\item \vskip12pt \large{For which types of households are SNAP benefits inadequate?}}
+%{\item \vskip12pt \large{What about for SNAP-eligible households?}}\\
+%{\item \vskip12pt \large{For which types of households are SNAP benefits inadequate?}}
 \end{enumerate}
 \end{frame}
 
@@ -331,80 +387,6 @@ You're supposed to be able to buy TFP with 30\% of net income + food stamp benef
 %\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Table generated by Excel2LaTeX from sheet 'Tdist-suffEL'
-\begin{frame}
-\begin{table}[htbp]{Sufficiency Rates of SNAP for \textbf{Eligible} Households by Distance from Stores}
-
-\begin{adjustbox}{height=1.5in}
-    
-    \begin{tabular}{lllllll}
-    \toprule
-          & Average & Standard Error & N     & Average & Standard Error & N \\
-    \midrule
-     & \multicolumn{3}{c}{Simulated Benefits} & \multicolumn{3}{c}{Max Benefits} \\
-    
-    Region Median & 94\%  & 0.01  & 2405  & 78\%  & 0.03  & 2405 \\
-    State Median & 93\%  & 0.01  & 2405  & 73\%  & 0.03  & 2405 \\
-    County Median & 93\%  & 0.01  & 2395  & 71\%  & 0.05  & 2395 \\
-    20-mile Median & 92\%  & 0.01  & 2242  & 69\%  & 0.05  & 2242 \\
-    10-mile Median & 92\%  & 0.01  & 2189  & 68\%  & 0.04  & 2189 \\
-    5-mile Median & 91\%  & 0.01  & 2043  & 67\%  & 0.04  & 2043 \\
-    3.4-mile Median & 91\%  & 0.01  & 1962  & 68\%  & 0.04  & 1962 \\
-    2.5mile Median & 92\%  & 0.01  & 1879  & 68\%  & 0.04  & 1879 \\
-    10-nearest Median & 93\%  & 0.01  & 2242  & 72\%  & 0.03  & 2242 \\
-    5-nearest Median & 92\%  & 0.01  & 2237  & 64\%  & 0.03  & 2237 \\
-          &       &       &       &       &       &  \\
-    Region Minimum & 100\% & 0.00  & 2405  & 100\% & 0.00  & 2405 \\
-    State Minimum & 100\% & 0.00  & 2405  & 100\% & 0.00  & 2405 \\
-    County Minimum & 100\% & 0.00  & 2395  & 100\% & 0.00  & 2395 \\
-    20-mile Minimum & 100\% & 0.00  & 2242  & 99\%  & 0.01  & 2242 \\
-    10-mile Minimum & 100\% & 0.00  & 2189  & 100\% & 0.00  & 2189 \\
-    5-mile Minimum & 99\%  & 0.00  & 2043  & 98\%  & 0.00  & 2043 \\
-    3.4-mile Minimum & 99\%  & 0.00  & 1962  & 98\%  & 0.01  & 1962 \\
-    2.5mile Minimum & 99\%  & 0.00  & 1879  & 97\%  & 0.01  & 1879 \\
-    10-nearest Minimum & 100\% & 0.00  & 2242  & 99\%  & 0.01  & 2242 \\
-    5-nearest Minimum & 99\%  & 0.00  & 2237  & 97\%  & 0.01  & 2237 \\
-    2-nearest Minimum & 96\%  & 0.00  & 2237  & 82\%  & 0.02  & 2237 \\
-    \bottomrule
-\end{tabular}
-\end{adjustbox}
-\end{table}
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Table generated by Excel2LaTeX from sheet 'Tdist-gap'
-%\begin{frame}
-%\begin{table}[htbp]{Dollar Gap between SNAP and TFP for Recipient Households by Distance from Store}
-%\begin{adjustbox}{max width=\textwidth}
-%  \centering
-%    \begin{tabular}{llllllllll}
-%    \toprule
-%    \midrule
-%          & \multicolumn{3}{l}{Gross Income} & \multicolumn{3}{l}{Net Income} & \multicolumn{3}{l}{Max Benefits} \\
-%    TFP Calculation & Mean & S.E. & N     & Mean & S.E. & N     & Mean & S.E. & N \\
-%    Primary Store & 122.35 & --    & 86    & 118.07 & --    & 173   & 41.19 & --    & 255 \\
-%    Alternate Store & 150.53 & --    & 54    & 154.66 & --    & 106   & 49.33 & --    & 157 \\
-%    Primary and Alt Mean & 145.72 & --    & 105   & 127.14 & --    & 224   & 41.84 & --    & 282 \\
-%    20-mile Mean & 137.69 & --    & 171   & 153.89 & --    & 327   & 35.19 & --    & 422 \\
-%    20-mile Median & 121.04 & --    & 167   & 141.40 & --    & 335   & 22.25 & --    & 509 \\
-%    20-mile Minimum & 77.03 & --    & 48    & 99.21 & --    & 104   & 15.87 & --    & 2 \\
-%    10-mile Mean & 141.62 & --    & 170   & 151.67 & --    & 324   & 39.77 & --    & 433 \\
-%    10-mile Median & 133.20 & --    & 161   & 144.44 & --    & 313   & 24.10 & --    & 498 \\
-%    10-mile Minimum & 97.35 & --    & 59    & 108.68 & --    & 124   & 30.11 & --    & 14 \\
-%    5-mile Mean & 142.27 & --    & 162   & 151.16 & --    & 315   & 38.47 & --    & 426 \\
-%    5-mile Median & 135.35 & --    & 158   & 150.97 & --    & 300   & 28.81 & --    & 462 \\
-%    5-mile Minimum & 106.25 & --    & 68    & 117.23 & --    & 148   & 21.33 & --    & 34 \\
-%    3.4-mile Mean & 147.17 & --    & 161   & 156.81 & --    & 306   & 41.57 & --    & 420 \\
-%    3.4-mile Median & 125.05 & --    & 160   & 147.47 & --    & 294   & 28.99 & --    & 454 \\
-%    3.4-mile Minimum & 105.63 & --    & 77    & 119.16 & --    & 163   & 22.38 & --    & 51 \\
-%    2.5-mile Mean & 139.27 & --    & 160   & 149.41 & --    & 295   & 47.19 & --    & 420 \\
-%    2.5-mile Median & 130.23 & --    & 150   & 146.21 & --    & 287   & 34.81 & --    & 447 \\
-%    2.5-mile Minimum & 108.30 & --    & 79    & 121.42 & --    & 170   & 25.57 & --    & 92 \\
-%    \bottomrule
-%\end{tabular}
-%\end{adjustbox}
-%\end{table}
-%\end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -451,7 +433,69 @@ You're supposed to be able to buy TFP with 30\% of net income + food stamp benef
 \end{frame}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Nutrition}
+ Bronchetti, Christensen, Hansen
+\begin{itemize}
+\item Use local relative generosity of SNAP to measure nutrition impacts.
+\item Outcomes: 
+\begin{itemize}
+\item HEI (total, fruit, veg)
+\item sugar, fat, alcohol (sofa\_perc)
+\item self-reported nutrition status
+\end{itemize}
+\item Cross-sectional data: use Altonji, Elder, Taber method to compare with and without observable controls.
+\item National School Lunch Program and the School Breakfast Program as mediators.
+\end{itemize}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Nutrition}
+ $$Nutrition_{ij}=\alpha + \beta \cdot f(TFP_{ij}, MAXSNAP_{ij}) + X_{ij} \cdot \theta + \delta_{j}+\epsilon_{ij} $$
+ 
+\begin{itemize}
+\item Function could be $log (TFP_{ij})$, $log(SNAPMAX_{ij}/TFP_{ij})$, sufficiency[0/1], or gap[cont.].
+\item $X$ is rural, nonmetro, troublebills, largeexp, highpricearea, inchhavg, famsize, nocar, anytobacco, snapdays\_final, WIC eligibility.
+\item County fixed effects for now.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Nutrition}
+Table I: SNAP purchasing power
+\end{frame}
+
+\begin{frame}{Nutrition}
+Table II: Binary measure of sufficiency
+\end{frame}
+
+\begin{frame}{Nutrition}
+Table III: Measure shortfall/surplus
+\end{frame}
+
+\begin{frame}{Nutrition}
+Very tentative conclusions
+ 
+\begin{itemize}
+\item Higher real value of SNAP associated with higher HEI score, evenly across sub-categories.
+\item Drop in sugar, fat, and alcohol.
+\item Less strong when filtered through exact TFP cost.
+\end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
+\hspace{34mm}
+\color{blue!60!black!60}{\Huge{Thank You}}
+\end{frame}
+
+\end{document}
+
+%OLD STUFF ON OTHER PAPERS
+%%%%%%%%%%%%%%%
 \section{Conclusions}
 
 \begin{frame}{Conclusions and Concerns from Variation in Sufficiency}
@@ -545,61 +589,3 @@ We do not find much evidence that these higher prices cause detrimental impacts 
 \end{table}
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Nutrition}
- Bronchetti, Christensen, Hansen
-\begin{itemize}
-\item Use local relative generosity of SNAP to measure nutrition impacts.
-\item Outcomes: 
-\begin{itemize}
-\item HEI (total, fruit, veg)
-\item sugar, fat, alcohol (sofa\_perc)
-\item self-reported nutrition status
-\end{itemize}
-\item Cross-sectional data: use Altonji, Elder, Taber method to compare with and without observable controls.
-\item National School Lunch Program and the School Breakfast Program as mediators.
-\end{itemize}
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Nutrition}
- $$Nutrition_{ij}=\alpha + \beta \cdot f(TFP_{ij}, MAXSNAP_{ij}) + X_{ij} \cdot \theta + \delta_{j}+\epsilon_{ij} $$
- 
-\begin{itemize}
-\item Function could be $log (TFP_{ij})$, $log(SNAPMAX_{ij}/TFP_{ij})$, sufficiency[0/1], or gap[cont.].
-\item $X$ is rural, nonmetro, troublebills, largeexp, highpricearea, inchhavg, famsize, nocar, anytobacco, snapdays\_final, WIC eligibility.
-\item County fixed effects for now.
-\end{itemize}
-\end{frame}
-
-
-\begin{frame}{Nutrition}
-Table I: SNAP purchasing power
-\end{frame}
-
-\begin{frame}{Nutrition}
-Table II: Binary measure of sufficiency
-\end{frame}
-
-\begin{frame}{Nutrition}
-Table III: Measure shortfall/surplus
-\end{frame}
-
-\begin{frame}{Nutrition}
-Very tentative conclusions
- 
-\begin{itemize}
-\item Higher real value of SNAP associated with higher HEI score, evenly across sub-categories.
-\item Drop in sugar, fat, and alcohol.
-\item Less strong when filtered through exact TFP cost.
-\end{itemize}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[plain]
-\hspace{34mm}
-\color{blue!60!black!60}{\Huge{Thank You}}
-\end{frame}
-
-\end{document}
