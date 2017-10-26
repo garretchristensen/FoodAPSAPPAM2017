@@ -29,7 +29,7 @@
 
 \date[Short Occasion] % (optional)
 {November 2017* \\
-Preliminary: Please ask before citing}
+Preliminary: Please check before citing}
 
 
 \subject{Talks}
@@ -125,7 +125,9 @@ Slides available at
 The Supplemental Nutrition Assistance Program (SNAP) is one of the largest government assistance programs.
 \begin{itemize}
 \item
-	2016: 44m recipients, cost of \$70 billion FY2016 \begin{tiny}[\href{https://fns-prod.azureedge.net/sites/default/files/pd/SNAPsummary.pdf}{Source: USDA FNS}]
+	2016: 44m recipients, cost of \$70 billion FY2016 
+	
+	\begin{tiny}[\href{https://fns-prod.azureedge.net/sites/default/files/pd/SNAPsummary.pdf}{Source: USDA FNS}]
 \end{tiny}	
 \item 
 	Started in 1964%, expanded in 1971, purchase requirement eliminated in 1977
@@ -187,8 +189,11 @@ Administration Proposals:
 \begin{itemize}
 \item
  While legislated maximum SNAP benefits are fixed across 48 states, food prices vary significantly across geographic locations.
-\item Deductions for costs of housing, medical care, and dependent care help, but are not sufficient sufficient to equalize real value of SNAP benefits across geographic areas \href{http://www.childrenshealthwatch.org/publication/real-cost-of-a-healthy-diet-2011/}{(Breen et al., 2011)}.
-\item Food price variation has been studied using BLS data at the census region level, or using \href{http://www.ers.usda.gov/data-products/quarterly-food-at-home-price-database.aspx}{QFAHPD} for 35 market groups \href{http://aepp.oxfordjournals.org/content/35/4/679}{(Gregory \& Coleman-Jensen, 2013)}.
+\item Deductions for costs of housing, medical care, and dependent care help may not be sufficient to equalize real value of SNAP benefits geographically.
+\begin{itemize}
+\item Small scale study in Philadelphia \href{http://www.childrenshealthwatch.org/publication/real-cost-of-a-healthy-diet-2011/}{(Breen et al., 2011)}.
+\item  Quarterly Food at Home Price Database \href{http://www.ers.usda.gov/data-products/quarterly-food-at-home-price-database.aspx}{(QFAHPD)} price variation (35 market groups) shows  a \$10 increase in food price leads to 2.7 percentage point (5\%) increase in household food insecurity. (3.1 pp, 12\% for children) \href{http://aepp.oxfordjournals.org/content/35/4/679}{(Gregory \& Coleman-Jensen, 2013)}.
+\end{itemize}
 \end{itemize}
 \end{frame}
 
@@ -198,8 +203,9 @@ Administration Proposals:
  What fraction of recipients can actually afford the TFP locally?
 \item 
 \textbf{What does SNAP relative generosity do to nutrition?}
-\item Other data: 
- What does SNAP relative generosity do to child health?
+\vskip0.5in
+\item Other data (QFAPHD): 
+ What does SNAP relative generosity do to child health? (Bronchetti, Christensen, Hoynes)
 \end{itemize}
 \end{frame}
 
@@ -267,7 +273,7 @@ Sorry!
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{FoodAPS}
-``USDA's National Household Food Acquisition and Purchase Survey (FoodAPS) is the first nationally representative survey of American households to collect unique and comprehensive data about household food purchases and acquisitions.''
+``USDA's National Household Food Acquisition and Purchase Survey \href{https://www.ers.usda.gov/data-products/foodaps-national-household-food-acquisition-and-purchase-survey.aspx}{(FoodAPS)} is the first nationally representative survey of American households to collect unique and comprehensive data about household food purchases and acquisitions.''
 \begin{itemize}
 \item FoodAPS lets us look at the relationship between food prices and SNAP adequacy at a much finer geographical level.
 \item  \href{https://www.ers.usda.gov/media/8612/priceindexdata.pdf}{Gunderson et al.} use IRI InfoScan data at store (or regional chain) level to build basketprice measure.
@@ -304,11 +310,11 @@ You're supposed to be able to buy TFP with 30\% of net income + food stamp benef
 \end{frame}
 
 
-\begin{frame}
-\begin{figure}
-\frame{\includegraphics[scale=0.35]{./images/TFPa}}
-\end{figure}
-\end{frame}
+%\begin{frame}
+%\begin{figure}
+%\frame{\includegraphics[scale=0.35]{./images/TFPa}}
+%\end{figure}
+%\end{frame}
 %%%%%%%%%%%%%%%%HISTOGRAMS OF TFP
 
 %\begin{frame}
@@ -319,9 +325,8 @@ You're supposed to be able to buy TFP with 30\% of net income + food stamp benef
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\begin{frame}{Research Questions}
-\begin{enumerate}
-\item \large{Are SNAP benefits adequate for SNAP households to purchase the TFP? If not, what is the shortfall?}\\
+\begin{frame}{SNAP Sufficiency for TFP}
+ \large{Are SNAP benefits adequate for SNAP households to purchase the TFP? If not, what is the shortfall?}\\
 \vskip6pt \hspace{2mm} \normalsize{\underline{\textit{Compare TFP cost to:}}}
 \begin{itemize}
 {\item SNAP benefit received + 30\% of net income} 
@@ -329,47 +334,47 @@ You're supposed to be able to buy TFP with 30\% of net income + food stamp benef
 \end{itemize}
 %{\item \vskip12pt \large{What about for SNAP-eligible households?}}\\
 %{\item \vskip12pt \large{For which types of households are SNAP benefits inadequate?}}
-\end{enumerate}
+
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 
 % Table generated by Excel2LaTeX from sheet 'Tcounty-st-cr-suff'
-\begin{table}[htbp]{Sufficiency Rates of SNAP for \textbf{Recipient} Households by Distance from Stores}
+\begin{table}[htbp]{Sufficiency Rates of SNAP for Recipient Households by Distance from Stores}
 
 \begin{adjustbox}{height=1.5in}
   \centering
-    \begin{tabular}{lllllll}
+    \begin{tabular}{llllll}
     \toprule
-          & Average & Standard Error & N     & Average & Standard Error & N \\
+          & Average  & N     & Average  & N \\
 
-     & \multicolumn{3}{c}{Net Income} & \multicolumn{3}{c}{Max Benefits} \\
+     & \multicolumn{2}{l}{Net Income} & \multicolumn{2}{l}{Max Benefits} \\
 
     \midrule
-    Census Region Median & 78\%  & 0.02  & 1444  & 83\%  & 0.03  & 1581 \\
-    State Median & 79\%  & 0.02  & 1444  & 76\%  & 0.04  & 1581 \\
-    County Median & 79\%  & 0.02  & 1436  & 74\%  & 0.04  & 1572 \\
-    20-mile Median & 78\%  & 0.02  & 1338  & 73\%  & 0.04  & 1464 \\
-    10-mile Median & 78\%  & 0.02  & 1311  & 73\%  & 0.04  & 1433 \\
-    5-mile Median & 77\%  & 0.02  & 1224  & 72\%  & 0.04  & 1338 \\
-    3.4-mile Median & 77\%  & 0.02  & 1174  & 74\%  & 0.04  & 1281 \\
-    2.5mile Median & 77\%  & 0.02  & 1123  & 72\%  & 0.04  & 1225 \\
-    10-nearest Median & 79\%  & 0.02  & 1338  & 77\%  & 0.03  & 1464 \\
-    5-nearest Median & 78\%  & 0.02  & 1332  & 71\%  & 0.03  & 1458 \\
-          &       &       &       &       &       &  \\
+    Census Region Median & 78\%    & 1444  & 83\%    & 1581 \\
+    State Median & 79\%    & 1444  & 76\%    & 1581 \\
+    County Median & 79\%    & 1436  & 74\%    & 1572 \\
+    20-mile Median & 78\%    & 1338  & 73\%    & 1464 \\
+    10-mile Median & 78\%    & 1311  & 73\%    & 1433 \\
+    5-mile Median & 77\%    & 1224  & 72\%    & 1338 \\
+    3.4-mile Median & 77\%    & 1174  & 74\%    & 1281 \\
+    2.5mile Median & 77\%    & 1123  & 72\%    & 1225 \\
+    10-nearest Median & 79\%    & 1338  & 77\%    & 1464 \\
+    5-nearest Median & 78\%    & 1332  & 71\%    & 1458 \\
+          &       &          &           &  \\
 
-    Census Region Minimum & 100\% & 0.00  & 1444  & 100\% & 0.00  & 1581 \\
-    State Minimum & 99\%  & 0.00  & 1444  & 100\% & 0.00  & 1581 \\
-    County Minimum & 94\%  & 0.01  & 1436  & 100\% & 0.00  & 1572 \\
-    20-mile Minimum & 95\%  & 0.01  & 1338  & 100\% & 0.00  & 1464 \\
-    10-mile Minimum & 93\%  & 0.01  & 1311  & 100\% & 0.00  & 1433 \\
-    5-mile Minimum & 91\%  & 0.01  & 1224  & 99\%  & 0.00  & 1338 \\
-    3.4-mile Minimum & 90\%  & 0.01  & 1174  & 100\% & 0.00  & 1281 \\
-    2.5mile Minimum & 90\%  & 0.01  & 1123  & 99\%  & 0.01  & 1225 \\
-    10-nearest Minimum & 91\%  & 0.01  & 1338  & 100\% & 0.00  & 1464 \\
-    5-nearest Minimum & 89\%  & 0.01  & 1332  & 98\%  & 0.01  & 1458 \\
-    2-nearest Minimum & 83\%  & 0.02  & 1332  & 85\%  & 0.02  & 1458 \\
+    Census Region Minimum & 100\%  & 1444  & 100\%   & 1581 \\
+    State Minimum & 99\%   & 1444  & 100\%   & 1581 \\
+    County Minimum & 94\%   & 1436  & 100\%   & 1572 \\
+    20-mile Minimum & 95\%    & 1338  & 100\%   & 1464 \\
+    10-mile Minimum & 93\%    & 1311  & 100\%   & 1433 \\
+    5-mile Minimum & 91\%    & 1224  & 99\%    & 1338 \\
+    3.4-mile Minimum & 90\%    & 1174  & 100\%   & 1281 \\
+    2.5mile Minimum & 90\%    & 1123  & 99\%    & 1225 \\
+    10-nearest Minimum & 91\%    & 1338  & 100\%   & 1464 \\
+    5-nearest Minimum & 89\%    & 1332  & 98\%    & 1458 \\
+    2-nearest Minimum & 83\%    & 1332  & 85\%    & 1458 \\
     \bottomrule
     \end{tabular}
     \end{adjustbox}
@@ -406,14 +411,12 @@ You're supposed to be able to buy TFP with 30\% of net income + food stamp benef
     Family Size & 2.78  & 2.65  & 0.43  & 2.52  & 2.21  & 0.11 \\
     Household Max Age & 50.83 & 49.35 & 0.30  & 53.22 & 53.00 & 0.89 \\
     Household Min Age & 27.00 & 28.14 & 0.65  & 34.82 & 37.21 & 0.43 \\
-    Income Per Person & 952.04 & 894.23 & 0.52  & 1571.35 & 1354.35 & 0.18 \\
-    Income & 2392.80 & 1950.32 & 0.05  & 3059.18 & 2355.08 & 0.04 \\
+    \textbf{Household Income} & 2392.80 & 1950.32 & 0.05  & 3059.18 & 2355.08 & 0.04 \\
     Percent of Poverty Line & 141.95 & 124.20 & 0.12  & 209.82 & 172.74 & 0.08 \\
     HH Has Earned Income & 0.50  & 0.53  & 0.57  & 0.60  & 0.55  & 0.21 \\
     Household Max Education & 20.08 & 19.65 & 0.10  & 20.76 & 20.24 & 0.09 \\
     HH Has Elderly Member & 0.30  & 0.27  & 0.40  & 0.38  & 0.37  & 0.83 \\
-    Nonmetro Area & 0.03  & 0.17  & 0.01  & 0.03  & 0.17  & 0.02 \\
-    Metro Area & 0.97  & 0.83  & 0.01  & 0.97  & 0.83  & 0.02 \\
+      \textbf{Metro Area} & 0.97  & 0.83  & 0.01  & 0.97  & 0.83  & 0.02 \\
     High Food Security & 0.34  & 0.32  & 0.52  & 0.45  & 0.50  & 0.44 \\
     Marginal Food Security & 0.25  & 0.21  & 0.24  & 0.23  & 0.19  & 0.13 \\
     Low Food Security & 0.24  & 0.26  & 0.57  & 0.21  & 0.16  & 0.08 \\
@@ -436,52 +439,136 @@ You're supposed to be able to buy TFP with 30\% of net income + food stamp benef
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Nutrition}
- Bronchetti, Christensen, Hansen
+\begin{frame}{Nutrition: Overview}
 \begin{itemize}
 \item Use local relative generosity of SNAP to measure nutrition impacts.
-\item Outcomes: 
+\item Cross-sectional data: use \href{http://www.tandfonline.com/doi/abs/10.1080/07350015.2016.1227711}{Oster's 2016} improvement to \href{http://www.journals.uchicago.edu/doi/abs/10.1086/426036}{Altonji, Elder, Taber 2005} method to compare with and without observable controls.
+\item National School Lunch Program and the School Breakfast Program as mediators.
+\item Outcomes:
 \begin{itemize}
-\item HEI (total, fruit, veg)
+\item Healthy Eating Index (total, fruit, veg)
 \item sugar, fat, alcohol (sofa\_perc)
 \item self-reported nutrition status
 \end{itemize}
-\item Cross-sectional data: use Altonji, Elder, Taber method to compare with and without observable controls.
-\item National School Lunch Program and the School Breakfast Program as mediators.
 \end{itemize}
 
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Nutrition}
- $$Nutrition_{ij}=\alpha + \beta \cdot f(TFP_{ij}, MAXSNAP_{ij}) + X_{ij} \cdot \theta + \delta_{j}+\epsilon_{ij} $$
- 
+
+\begin{frame}{Healthy Eating Index}
+
 \begin{itemize}
-\item Function could be $log (TFP_{ij})$, $log(SNAPMAX_{ij}/TFP_{ij})$, sufficiency[0/1], or gap[cont.].
-\item $X$ is rural, nonmetro, troublebills, largeexp, highpricearea, inchhavg, famsize, nocar, anytobacco, snapdays\_final, WIC eligibility.
-\item County fixed effects for now.
+\item 
+ Created by USDA's Center for Nutrition Policy and Promotion (CNPP) to assess conformance to the \textit{Dietary Guidelines for Americans}. Updated every five years. \href{https://www.cnpp.usda.gov/sites/default/files/healthy_eating_index/HEI2010-UpdatePaper.pdf}{(Guenther et al.)}. 
+ \item 
+Nine adequacy, three moderation components.
+\item 
+Density approach (per 1000 calories).
+\item 
+Zeros prevalent in component scores.
+\item 
+National average ~60/100. 
 \end{itemize}
 \end{frame}
 
+\begin{frame}{Healthy Eating Index}
+\begin{table}{}
+\begin{tabular}{lll}
 
-\begin{frame}{Nutrition}
-Table I: SNAP purchasing power
+HEI-2010 Dietary Component & Max Score & Moderation \\
+\toprule
+Total Fruit & 5 & \\
+Whole Fruit & 5 & \\
+Total Vegetables & 5& \\
+Greens and Beans & 5 &\\
+Whole Grains & 10 &\\
+Dairy & 10& \\
+Total Protein Foods & 5& \\
+Seafood and Plant Proteins & 5& \\
+Fatty Acids & 10& \\
+Refined Grains & 10& M \\
+Sodium & 10 & M\\
+Empty Calories & 20&  M \\
+\bottomrule 
+\end{tabular}
+\end{table}
+\begin{tiny}\begin{center}
+Note: See \href{https://www.cnpp.usda.gov/sites/default/files/healthy_eating_index/CNPPFactSheetNo2.pdf}{CNPP factsheet} for scoring standards. \end{center}\end{tiny}
 \end{frame}
 
-\begin{frame}{Nutrition}
-Table II: Binary measure of sufficiency
-\end{frame}
 
-\begin{frame}{Nutrition}
-Table III: Measure shortfall/surplus
-\end{frame}
-
-\begin{frame}{Nutrition}
-Very tentative conclusions
+\begin{frame}{Nutrition: Controlling for Observables}
+ $$Nutrition_{ij}=\alpha + \beta \cdot f(TFP_{ij}, MAXSNAP_{ij}) + X_{ij} \cdot \theta + \delta_{j}+\epsilon_{ij} $$
  
 \begin{itemize}
-\item Higher real value of SNAP associated with higher HEI score, evenly across sub-categories.
+\item Focus on $log(SNAPMAX_{ij}/TFP_{ij})$ as independent variable of interest, though it could be $log (TFP_{ij})$, sufficiency[0/1], or gap[continuous].
+\item $X$ is rural, metro, income, trouble with bills, large expenditure, household size, car ownership, tobacco use, days since SNAP receive, WIC eligibility, WIC use, age, race, sex, non-food CPI (9).
+\item State fixed effects
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Methods: Controlling for Observables}
+\begin{itemize}
+\item Individual level
+\begin{itemize}
+\item Assume FAH consumed by all, assign FAFH to individual
+\end{itemize}
+\item Primary sample: SNAP participants
+\begin{itemize}
+\item Children and adults separately
+\end{itemize}
+\item Placebo: $>300\%$ Federal 
+\item Regressions weighted according to complex survey design. \begin{tiny}\href{https://www.ers.usda.gov/media/8804/0_foodaps-user-guide-puf.pdf}{User's Guide Pg 55}\end{tiny}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Methods: Oster 2016}
+
+$$Y=\beta X +\Psi \omega^0+W_2+\epsilon$$
+
+$X$ is treatment of interest.
+
+$\omega$ observed, W is not.
+\vskip0.1in
+What happens to our effect estimate if we assume the unobservables have a similar correlation to treatment as the observables?
+\vskip0.1in
+Depends on relative degree of selection on observed and unobserved variables $(\delta)$, as well as $R^2$ resulting from controlling for unobservables, $R_{max}$.
+\end{frame}
+
+\begin{frame}{Oster 2016}
+\href{http://jhr.uwpress.org/content/XL/4/791.short}{Altonji, Elder, Taber (2005)} implicitly assume $R_{max}$=1. Perhaps unlikely due to measurement error or idiosyncratic variation.
+\vskip0.1in
+\href{http://www.sciencedirect.com/science/article/pii/S0047272709000942}{Bellows \& Miguel 2009}, \href{https://www.aeaweb.org/articles?id=10.1257/aer.101.7.3221}{Nunn \& Wantchekon 2011} assume $R_{max}=\tilde{R}+(\tilde{R}-\mathring{R})$. 
+\vskip0.1in
+$R_{max}$ is a flexible parameter in Oster's method, but $1.3\times\tilde{R}$ performs well in tests.
+\vskip0.1in
+$$\beta^* \approx \tilde{\beta}-\delta(\mathring{\beta}-\tilde{\beta})\frac{R_{max}-\tilde{R}}{\tilde{R}-\mathring{R}}$$ 
+
+\end{frame}
+
+\begin{frame}{Results: Graphically}
+SNAP vs. non SNAP HEI kernel density plots
+\end{frame}
+
+\begin{frame}{Results}
+sample=SNAP kids
+\end{frame}
+
+\begin{frame}{Results}
+sample=SNAP adults
+\end{frame}
+
+\begin{frame}{Results}
+sample=kids $> 300\%$ FPL
+\end{frame}
+
+\begin{frame}{Nutrition}
+Tentative conclusions
+ 
+\begin{itemize}
+\item Higher real value of SNAP associated with higher HEI score, not strong statistical significance.
 \item Drop in sugar, fat, and alcohol.
 \item Less strong when filtered through exact TFP cost.
 \end{itemize}
@@ -494,98 +581,4 @@ Very tentative conclusions
 
 \end{document}
 
-%OLD STUFF ON OTHER PAPERS
-%%%%%%%%%%%%%%%
-\section{Conclusions}
-
-\begin{frame}{Conclusions and Concerns from Variation in Sufficiency}
- 
-Bronchetti, Christensen, Hansen
- 
-\begin{enumerate}
-\item 
-Fraction of SNAP households who can afford to purchase the TFP within their county 75\% to 80\%.
-
-\begin{itemize}
-\item Matters less what shopping radius you use than whether people can find and shop at minimum store.
-
-\end{itemize}
-\item 
-Estimated measures of SNAP adequacy are higher among SNAP-eligible households than SNAP recipients, with results dependent on benefit calculation method.
-\item 
-Families in high-price and perhaps metro areas are less able to afford the TFP.
-
-\item Gap measure hard to define in useful relative terms (zero/very low income, benefits).
-\end{enumerate}
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Health Effects}
- Bronchetti, Christensen, Hoynes
- 
-\href{http://www.ukcpr.org/sites/www.ukcpr.org/files/UKCPR\%20Grant\%20Winners\%20Announcement.pdf}{The Real Value of SNAP Benefits and Health Outcomes}
-\begin{itemize}
-\item Use QFAHPD and restricted access geo-located NHIS to look at how food price variation affects health outcomes among SNAP recipients and SNAP eligibles (UKCPR).
-\item 
-10 percent increase in SNAP purchasing power increases the likelihood a child had a check-up in the past year by 5.4 percent and may reduce the likelihood that children delay or go without care due to cost.
-\item
-We do not find much evidence that these higher prices cause detrimental impacts on health status, the likelihood of a hospitalization, or other measures of physical (e.g., obesity) and mental health (e.g., child has emotional problems). School days is exception.
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\begin{table}{Health Care Utilization}%[htbp]
-
-\begin{adjustbox}{max width=\textwidth}
-  \centering
-      \begin{tabular}{lccc}
-    
-       \toprule
-          & (1)   & (2)   & (3) \\
-    \midrule
-          & Had a & Doctor's & Delay or \\
-          & checkup & visit & forgo care \\
-          & past 12m & past 12m & past 12m \\
-          &       &       &  \\
-    log(SNAPMAX/TFP) & 0.435** & 0.221 & -0.148** \\
-          & (0.205) & (0.141) & (0.068) \\
-          &       &       &  \\
-    Mean of dep. var. & 0.766 & 0.895 & 0.0563 \\
-    Effect of 10\% increase in SNAP purchasing power & 0.041 & 0.021 & -0.014 \\
-    As a \% of mean of dep. var. & \textbf{5.4\%} & 2.3\% & \textbf{-24.9\%} \\
-    N     & 18,746 & 18,884 & 18,884 \\
-    R2    & 0.083 & 0.043 & 0.020 \\
-    \bottomrule
-\end{tabular}
-\end{adjustbox}
-\end{table}
-\end{frame}
-
-
-\begin{frame}
-\begin{table}{Health Outcomes}%[htbp]
-
-\begin{adjustbox}{max width=\textwidth}
-  \centering
-      \begin{tabular}{lccc}
-    \toprule
-          & (1)   & (2)   & (3) \\
-    \midrule
-          & Health status & Hospitalized & School days \\
-          & excellent or & overnight & missed due \\
-          & very good & past 12m & to illness \\
-          &       &       &  \\
-    log(SNAPMAX/TFP) & -0.106 & 0.080 & -10.340** \\
-          & (0.185) & (0.079) & (3.873) \\
-          &       &       &  \\
-    Mean of dep. var. & 0.701 & 0.078 & 4.956 \\
-    Effect of 10\% increase in SNAP purchasing power & -0.010 & 0.000 & -0.986 \\
-    As a \% of mean of dep. var. & -1.4\% & 0.0\% & \textbf{-19.9\%} \\
-    N     & 18,880 & 18,872 & 11,942 \\
-    R2    & 0.034 & 0.150 & 0.038 \\
-    \bottomrule
-\end{tabular}
-\end{adjustbox}
-\end{table}
-\end{frame}
 
