@@ -405,7 +405,7 @@ You're supposed to be able to buy TFP with 30\% of net income + food stamp benef
     Family Size & 2.78  & 2.65  & 0.43  & 2.52  & 2.21  & 0.11 \\
     Household Max Age & 50.83 & 49.35 & 0.30  & 53.22 & 53.00 & 0.89 \\
     Household Min Age & 27.00 & 28.14 & 0.65  & 34.82 & 37.21 & 0.43 \\
-    \textbf{Household Income} & 2392.80 & 1950.32 & 0.05  & 3059.18 & 2355.08 & 0.04 \\
+    \textbf{Household Income $(\$1K)$} & 2392 & 1950 & 0.05  & 3059 & 2355 & 0.04 \\
     Percent of Poverty Line & 141.95 & 124.20 & 0.12  & 209.82 & 172.74 & 0.08 \\
     HH Has Earned Income & 0.50  & 0.53  & 0.57  & 0.60  & 0.55  & 0.21 \\
     Household Max Education & 20.08 & 19.65 & 0.10  & 20.76 & 20.24 & 0.09 \\
@@ -605,62 +605,148 @@ $$\beta^* \approx \tilde{\beta}-\delta(\mathring{\beta}-\tilde{\beta})\frac{R_{m
      \end{frame}
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}{Results}
+%\begin{table}{HEI Total Score: SNAP All Individuals}
+%
+%\begin{tabular}{llll}
+%\toprule
+%& (1) & (2) & (3) \\
+%\midrule
+%ln(SNAPMAX/TFP) & -5.031 & 8.630* & 13.24 \\
+%& (4.255) & (4.696) & (9.123) \\
+%\\
+%N & 3620 & 3551 & 3551 \\
+%$R^2$ & 0.002 & 0.120 & 0.160 \\
+%Mean & 53.25 & 53.25 & 53.25 \\
+%Effect10 & -0.480 & 0.823 & 1.262 \\
+%Beta($R_{max}=1)$&  & 158.7 & 136.5 \\
+%Delta($R_{max}=1)$&  & -0.0345 & -0.0642 \\
+%Beta($R_{max}=1.3\tilde{R})$ &  & 16.63 & 22 \\
+%Delta($R_{max}=1.3\tilde{R})$&  & -0.752 & -0.923 \\
+%Controls & & YES & YES \\
+%State FE &  &  & YES \\
+%\bottomrule
+%
+%\end{tabular}
+%\end{table}
+%\end{frame}
+%
+%\begin{frame}{Results}
+%\begin{table}{Nutrition Outcomes: SNAP All Individuals}
+%\begin{tabular}{llll}
+%\toprule
+%& (1) & (2) & (3)   \\
+%
+%& HEI-Veg & HEI-Fruit & SOFA   \\
+%\midrule
+%\\
+%ln(SNAPMAX/TFP) & 1.526 & 0.555 & -7.739   \\
+%& (0.926) & (1.191) & (6.626)  \\
+%\\
+%N & 3851 & 3851 & 3851   \\
+%$R^2$ & 0.085 & 0.154 & 0.127   \\
+%Mean & 3.205 & 2.580 & 31.75   \\
+%Effect10 & 0.145 & 0.0529 & -0.738   \\
+%Beta($R_{max}=1.3\tilde{R})$ & 2.317 & 1.449 & -13.10   \\
+%Delta($R_{max}=1.3\tilde{R})$ & -0.966 & -0.619 & -1.140   \\
+%Controls & YES & YES & YES   \\
+%State FE & YES & YES & YES   \\
+%\bottomrule
+%\end{tabular}
+%\end{table}
+%\end{frame}
+%
+%\begin{frame}{Results}
+%\begin{table}{Nutrition Outcomes: FPL$>300$\%FPL All Individuals}
+%\begin{adjustbox}{max width=\textwidth}
+%\centering
+%\begin{tabular}{llllll}
+%\toprule
+%& (1) & (2) & (3) & (4) & (5) \\
+%& HEI Total & HEI Veg & HEI Fruit & SOFA & Alcohol \\
+%\midrule
+%\\
+%ln(SNAPMAX/TFP) & -34.45 & -0.113 & -1.159 & 7.891 & -21.05 \\
+%& (50.43) & (3.927) & (4.500) & (16.79) & (456.2) \\
+%\\
+%N & 230 & 257 & 257 & 257 & 257 \\
+%$R^2$ & 0.442 & 0.535 & 0.477 & 0.364 & 0.421 \\
+%Mean & 53.02 & 3.205 & 2.565 & 31.81 & 67.22 \\
+%Effect10 & -3.284 & -0.0108 & -0.110 & 0.752 & -2.006 \\
+%Beta($R_{max}=1.3\tilde{R}$)& -42.51 & 0.101 & -0.970 & 7.848 & -20.99 \\
+%Delta($R_{max}=1.3\tilde{R}$)& -3.255 & 0.538 & 4.922 & 20.06 & 22.47 \\
+%Controls & YES & YES & YES & YES & YES \\
+%State FE & YES & YES & YES & YES & YES \\
+%\bottomrule
+%\end{tabular}
+%\end{adjustbox}
+%\end{table}
+%\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\begin{table}{HEI Total: SNAP Children 2-17}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lllll}
+\toprule
 
-\begin{frame}{Results}
-\begin{table}{HEI Total Score: SNAP All Individuals}
+ & (1) & (2) & (3) & (4) \\
+\midrule
+ \\
+ln(SNAPMAX/TFP) & -2.938 & 11.55* & 18.17 & 20.65* \\
+ & (6.426) & (5.919) & (12.54) & (11.35) \\
+School Breakfast &  &  &  & 1.020 \\
+ &  &  &  & (2.757) \\
+School Lunch &  &  &  & -4.482 \\
+ &  &  &  & (6.768) \\
+ \\
+N & 990 & 975 & 975 & 842 \\
+$R^2$ & 0.001 & 0.160 & 0.225 & 0.296 \\
+Mean & 53.11 & 53.11 & 53.11 & 53.13 \\
+Effect10 & -0.280 & 1.100 & 1.731 & 1.968 \\
+Beta($R_{max}=1)$ &  & 141.4 & 118.6 & 116.1 \\
+Delta($R_{max}=1)$ &  & -0.0600 & -0.115 & -0.177 \\
+Beta($R_{max}=1.3\tilde{R})$ &  & 20.26 & 28.14 & 32.63 \\
+Delta($R_{max}=1.3\tilde{R})$ &  & -0.904 & -1.044 & -1.139 \\
+Controls & NO & YES & YES & YES \\
+State FE &  &  & YES & YES \\
 
+\end{tabular}
+\end{adjustbox}
+\end{table}
+\end{frame}
+
+
+\begin{frame}
+\begin{table}{Nutrition Outcomes: SNAP Children 2-17}
+\begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{llll}
 \toprule
  & (1) & (2) & (3) \\
- \midrule
-ln(SNAPMAX/TFP) & -5.031 & 8.630* & 13.24 \\
- & (4.255) & (4.696) & (9.123) \\
+ & HEI Veg & HEI Fruit & SOFA \\
+\midrule
  \\
-N & 3620 & 3551 & 3551 \\
-$R^2$ & 0.002 & 0.120 & 0.160 \\
-Mean & 53.25 & 53.25 & 53.25 \\
-Effect10 & -0.480 & 0.823 & 1.262 \\
-Beta($R_{max}=1)$&  & 158.7 & 136.5 \\
-Delta($R_{max}=1)$&  & -0.0345 & -0.0642 \\
-Beta($R_{max}=1.3\tilde{R})$ &  & 16.63 & 22 \\
-Delta($R_{max}=1.3\tilde{R})$&  & -0.752 & -0.923 \\
-Controls & & YES & YES \\
-State FE &  &  & YES \\
+ln(SNAPMAX/TFP) & 1.751 & 1.102 & -11.90 \\
+ & (1.272) & (1.632) & (12.11) \\
+ \\
+N & 1065 & 1065 & 1065 \\
+$R^2$ & 0.201 & 0.158 & 0.230 \\
+Mean & 3.201 & 2.573 & 31.79 \\
+Effect10 & 0.167 & 0.105 & -1.134 \\
+Beta$(R_{max}=1.3\tilde{R})$ & 2.672 & 2.121 & -18.64 \\
+Delta$(R_{max}=1.3\tilde{R})$ & -1.500 & -0.941 & -1.387 \\
+Controls & YES & YES & YES \\
+State FE & YES & YES & YES \\
 \bottomrule
-
 \end{tabular}
+\end{adjustbox}
 \end{table}
 \end{frame}
 
-\begin{frame}{Results}
-\begin{table}{Nutrition Outcomes: SNAP All Individuals}
-\begin{tabular}{llll}
-\toprule
- & (1) & (2) & (3)   \\
-
- & HEI-Veg & HEI-Fruit & SOFA   \\
- \midrule
- \\
-ln(SNAPMAX/TFP) & 1.526 & 0.555 & -7.739   \\
- & (0.926) & (1.191) & (6.626)  \\
- \\
-N & 3851 & 3851 & 3851   \\
-$R^2$ & 0.085 & 0.154 & 0.127   \\
-Mean & 3.205 & 2.580 & 31.75   \\
-Effect10 & 0.145 & 0.0529 & -0.738   \\
-Beta($R_{max}=1.3\tilde{R})$ & 2.317 & 1.449 & -13.10   \\
-Delta($R_{max}=1.3\tilde{R})$ & -0.966 & -0.619 & -1.140   \\
-Controls & YES & YES & YES   \\
-State FE & YES & YES & YES   \\
-\bottomrule
-\end{tabular}
-\end{table}
-\end{frame}
-
-\begin{frame}{Results}
-\begin{table}{Nutrition Outcomes: FPL$>300$\%FPL All Individuals}
+\begin{frame}
+\begin{table}{Nutrition Outcomes:$>300\%$ FPL Children 2-17---Placebo Sample}
 \begin{adjustbox}{max width=\textwidth}
-\centering
+
 \begin{tabular}{llllll}
 \toprule
  & (1) & (2) & (3) & (4) & (5) \\
@@ -670,20 +756,24 @@ State FE & YES & YES & YES   \\
 ln(SNAPMAX/TFP) & -34.45 & -0.113 & -1.159 & 7.891 & -21.05 \\
  & (50.43) & (3.927) & (4.500) & (16.79) & (456.2) \\
  \\
-N & 230 & 257 & 257 & 257 & 257 \\
+ N & 230 & 257 & 257 & 257 & 257 \\
 $R^2$ & 0.442 & 0.535 & 0.477 & 0.364 & 0.421 \\
 Mean & 53.02 & 3.205 & 2.565 & 31.81 & 67.22 \\
 Effect10 & -3.284 & -0.0108 & -0.110 & 0.752 & -2.006 \\
-Beta($R_{max}=1.3\tilde{R}$)& -42.51 & 0.101 & -0.970 & 7.848 & -20.99 \\
-Delta($R_{max}=1.3\tilde{R}$)& -3.255 & 0.538 & 4.922 & 20.06 & 22.47 \\
+Beta$(R_{max}=1.3\tilde{R})$  & -42.51 & 0.101 & -0.970 & 7.848 & -20.99 \\
+Delta$(R_{max}=1.3\tilde{R})$  & -3.255 & 0.538 & 4.922 & 20.06 & 22.47 \\
 Controls & YES & YES & YES & YES & YES \\
 State FE & YES & YES & YES & YES & YES \\
 \bottomrule
 \end{tabular}
+
+
 \end{adjustbox}
 \end{table}
 \end{frame}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Results}
 \begin{table}{Nutrition Outcomes: SNAP Adults}
 \begin{adjustbox}{max width=\textwidth}
@@ -737,12 +827,12 @@ State FE &  &  & YES &  &  & YES \\
 \end{adjustbox}
 \end{table}
 \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Nutrition}
 Tentative conclusions
  
 \begin{itemize}
-\item No statistically significant improvements in HEI with higher SNAP purchasing power.
+\item Some suggestive evidence of improvements in HEI with higher SNAP purchasing power.
 \item Sign indicates more fruit and vegetables, less sugar, fat, and alcohol.
 \item Similar (insignificant) HEI  results in children and adults.
 \item Significantly higher obesity among SNAP recipient adults with higher SNAP purchasing power.
